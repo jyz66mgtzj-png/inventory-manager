@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Manager | Software Portfolio</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.95);border-bottom:1px solid #263244}nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;font-size:1.2rem}.nav-links{display:flex;gap:18px;font-size:.95rem;color:#cbd5e1}.hero{padding:90px 0 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#1e293b;border:1px solid #334155;font-size:.85rem;color:#cbd5e1;margin-bottom:18px}h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1;margin:0 0 22px;letter-spacing:-2px}.hero p{font-size:1.1rem;color:#cbd5e1;max-width:700px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #334155;font-weight:700}.btn-primary{background:#f8fafc;color:#0f172a;border-color:#f8fafc}.mockup{background:#111827;border:1px solid #334155;border-radius:18px;padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.28)}.mockup-top{display:flex;gap:8px;margin-bottom:16px}.dot{width:10px;height:10px;background:#475569;border-radius:50%}.terminal{border-radius:12px;background:#020617;padding:22px;min-height:310px;font-family:Consolas,monospace;color:#cbd5e1;font-size:.93rem;white-space:pre-line}section{padding:72px 0}.section-title{font-size:2rem;margin:0 0 12px}.section-copy{color:#94a3b8;max-width:720px;margin-bottom:32px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#111827;border:1px solid #263244;border-radius:14px;padding:24px}.card h3{margin-top:0}.card p{color:#94a3b8;margin-bottom:0}.tech{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.tag{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:7px 10px;font-size:.86rem;color:#cbd5e1}.sales-box{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;background:#f8fafc;color:#0f172a;border-radius:18px;padding:34px}.sales-box p{color:#475569;margin-bottom:0}.sales-box .btn-primary{background:#0f172a;color:white;border-color:#0f172a}footer{padding:34px 0 50px;color:#64748b;font-size:.9rem;text-align:center}@media(max-width:800px){.hero,.sales-box{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.nav-links{display:none}.hero{padding-top:60px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<div class="brand">Software Portfolio</div>
+<div class="nav-links">
+<a href="#product">Product</a>
+<a href="#features">Features</a>
+<a href="#tech">Technology</a>
+<a href="#buy">Buy</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container hero" id="product">
+<div>
+<div class="badge">Python Desktop Utility</div>
+<h1>Inventory Manager</h1>
+<p>A simple and reliable inventory management program for small stores and personal businesses. Add, view, update and delete products while keeping data safely saved between sessions.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#buy">Buy / Request a Copy</a>
+<a class="btn" href="#features">View Features</a>
+</div>
+</div>
+
+<div class="mockup">
+<div class="mockup-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="terminal">INVENTORY MANAGER
+
+1. Add Product
+2. Show Products
+3. Update Product
+4. Delete Product
+5. Exit
+
+Enter your choice: 2
+
+milk  | price: 5  | quantity: 20
+bread | price: 8  | quantity: 30
+rice  | price: 7  | quantity: 50</div>
+</div>
+</div>
+
+<section id="features">
+<div class="container">
+<h2 class="section-title">What the software does</h2>
+<p class="section-copy">Designed to keep inventory management straightforward, with persistent data storage and basic input protection.</p>
+<div class="grid">
+<div class="card"><h3>Product Management</h3><p>Add, display, update and delete products from one simple menu.</p></div>
+<div class="card"><h3>Persistent Storage</h3><p>Products are stored in a JSON file, so your data remains available after closing the program.</p></div>
+<div class="card"><h3>Error Handling</h3><p>Handles missing or invalid data files and protects against invalid numeric input.</p></div>
+<div class="card"><h3>Duplicate Protection</h3><p>Prevents adding the same product twice and keeps the inventory cleaner.</p></div>
+<div class="card"><h3>UTF-8 Support</h3><p>Supports Arabic and other non-English product names through UTF-8 encoding.</p></div>
+<div class="card"><h3>Easy to Customize</h3><p>The program can later be extended with SQLite, a graphical interface, reports and user accounts.</p></div>
+</div>
+</div>
+</section>
+
+<section id="tech">
+<div class="container">
+<h2 class="section-title">Built with Python</h2>
+<p class="section-copy">A compact project focused on clear logic, maintainability and practical inventory operations.</p>
+<div class="tech">
+<span class="tag">Python</span>
+<span class="tag">JSON</span>
+<span class="tag">Functions</span>
+<span class="tag">File Handling</span>
+<span class="tag">Error Handling</span>
+<span class="tag">UTF-8</span>
+</div>
+</div>
+</section>
+
+<section id="buy">
+<div class="container">
+<div class="sales-box">
+<div>
+<h2 style="margin-top:0">Interested in Inventory Manager?</h2>
+<p>Available for purchase, customization or further development. Replace the contact link below with your real email address before publishing.</p>
+</div>
+<a class="btn btn-primary" href="mailto:your@email.com?subject=Inventory%20Manager%20Inquiry">Contact to Buy</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Software Portfolio — Inventory Manager</div></footer>
+</body>
+</html>
